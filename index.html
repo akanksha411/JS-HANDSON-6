@@ -60,6 +60,35 @@
                 
         };  
     </pre>
+    <h3>4. Reverse a Number.</h3> <hr>
+    <pre>
+      var Reverse_Number = (N) => 
+{
+ var a=0;
+	   while(N>0){
+	     var x=N%10;
+	     a=a*10+x
+	     N=parseInt(N/10);
+	   }
+    return a; 
+
+};
+    </pre>
+    <h3>5.Substring Check.</h3> <hr>
+    <pre>
+      var Substring_Check = (S1, S2) => 
+{
+  const sArr=S1.split(" ")
+   for(let i=0;i< sArr.length;i++)
+   {
+     if(sArr[i]===S2){
+       return "YES";
+     }
+   }
+   return "NO";   
+};
+ 
+    </pre>
     
 </body>
 </html>
